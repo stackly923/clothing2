@@ -28,6 +28,72 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/dashboard.css" />
     <link rel="stylesheet" href="css/alignment.css" />
+    <style>
+      /* Sidebar scrollbar - same theme colour */
+
+.dashboard-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-sidebar nav {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 6px;
+
+    /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) transparent;
+}
+
+/* Chrome / Edge / Safari */
+.dashboard-sidebar nav::-webkit-scrollbar {
+    width: 6px;
+}
+
+.dashboard-sidebar nav::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.dashboard-sidebar nav::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 20px;
+}
+
+.dashboard-sidebar nav::-webkit-scrollbar-thumb:hover {
+    background: var(--ink);
+}
+
+.dashboard-sidebar nav::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .dashboard-sidebar {
+        position: relative;
+        top: auto;
+        height: auto;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .dashboard-sidebar nav {
+        max-height: 55vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}
+    </style>
   </head>
   <body data-page="customer-dashboard">
     <a class="skip" href="#main">Skip to content</a>
