@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Page Not Found | STACKLY</title>
+    <meta
+      name="description"
+      content="Page Not Found. Explore considered clothing, fit guidance and everyday style at STACKLY."
+    />
+    <meta property="og:title" content="Page Not Found | STACKLY" />
+    <meta
+      property="og:description"
+      content="Discover the STACKLY clothing store demonstration."
+    />
+    <meta
+      property="og:url"
+      content="https://stackly-clothing-store.dineshsaripirala.chatgpt.site/404.html"
+    />
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="stylesheet" href="css/alignment.css" />
+  </head>
+  <body data-page="404">
+    <a class="skip" href="#main">Skip to content</a>
+    <main id="main">
+      <section class="error-page">
+        <div>
+          <a class="logo error-brand" href="index.html"><img class="brand-logo" src="images/stackly-logo-black.webp" alt="STACKLY" width="180" height="60"></a>
+          <p class="eyebrow">404 / A LITTLE OUT OF PLACE</p>
+          <h1>This look<br />is missing.</h1>
+          <p>
+            The page you’re looking for may have moved. Let’s find you something
+            worth wearing.
+          </p>
+          <button class="btn" type="button" data-error-back>Back</button>
+          <a class="btn outline" href="index.html">Home</a>
+        </div>
+      </section>
+    </main>
+    <div id="toast" role="status" aria-live="polite"></div>
+    <dialog id="search-dialog">
+      <div class="dialog-heading">
+        <h2>Find your next favourite</h2>
+        <button data-close aria-label="Close search">×</button>
+      </div>
+      <label for="global-search">Search clothing</label
+      ><input
+        id="global-search"
+        type="search"
+        placeholder="Try linen, dress, or denim"
+      />
+      <div id="search-results" class="search-results"></div>
+    </dialog>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

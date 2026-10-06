@@ -1,0 +1,17 @@
+:root {
+  --cream: #f3e7de;
+  --blush: #d9c2bb;
+  --rose: #cfa092;
+  --sand: #c3a68d;
+  --ivory: #fffcf8;
+  --ink: #181513;
+  --muted: #75645c;
+  --border: #e5d7cf;
+  --accent: #925e51;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "DM Sans", Arial, sans-serif;
+  --space: clamp(24px, 5vw, 80px);
+  --radius: 3px;
+  --shadow: 0 12px 35px #18151310;
+  --transition: 200ms ease;
+}
